@@ -34,11 +34,10 @@ body {
   text-align: center;
 }
 
-h4{
+#promesses h3 {
     display: grid;
     gap: 20px;
     text-align: center;
-
 }
 
 
@@ -50,6 +49,11 @@ h4{
 .button_dec {
     border: 0;
     border-radius: 0.5rem;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
 }
 
 #accueil {
