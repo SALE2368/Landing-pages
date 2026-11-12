@@ -286,10 +286,12 @@ h2 {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    background-color: white;
+    background-color: rgb(210, 154, 154);
     padding: 20px;
-    }
-    
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
 @media (max-width: 560px) {
     .site-header {
         flex-wrap: wrap;
