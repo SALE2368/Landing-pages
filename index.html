@@ -7,84 +7,159 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- faire un header avec les lien 1,2,3 et Contact -->
     <header class="site-header">
         <nav class="logo">
             <a href="#accueil">
                 <img src="images/logo.png" alt="Palais du Chocolat">
             </a>
         </nav>
-        <nav>
-            <!-- Rangement des liens en horizontal sur mon header -->
+        <nav aria-label="Navigation principale">
             <ul class="site-nav">
-                <li><a href="#">Lien 1</a></li>
-                <li><a href="#">Lien 2</a></li>
-                <li><a href="#">Lien 3</a></li>
-                <button class="button_dec"><a class="contact-button" href="#">Contact</a></button>    
+                <li><a href="#produits">Offre</a></li>
+                <li><a href="#">Mon panier</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="contact-button" href="cafe.html">Créer un compte</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1 id="accueil">Palais du Chocolat</h1>
-        <p class="chocolat">Le chocolat qui éveille vos papilles</p>
-
-        <!-- la deuxième partie services -->
-        <h2>Promesse</h2>
-        <h4>Liste Benefices Clients</h4>
-
-    <nav class="Promesse">
-            <p>Des chocolats artisanaux de qualité supérieure,<br> réalisés à partir <br> d'ingrédients sélectionnés avec soin</p>
-            <p>Des saveurs uniques et originales,<br> pour des sensations gustatives<br> incomparables</p>
-            <p>Une attention particulière portée<br> à la présentation des chocolats,<br> pour des cadeaux gourmands<br> inoubliables</p>
-            <p>Un service personnalisé et attentionné,<br> pour répondre à toutes vos<br> demandes et envies</p>
-        </nav>
-       <img class="img1" src="images/promesses-julia-zyablova-EwaJbJvS9io-unsplash.jpg" alt="">
-       <!-- troisième partie : services -->
-       
-       <h2>Services</h2>
-       <div class="services">
-            <article class="service_card">
-                <img src="images/chocolats-artisanaux-pexels-linken-van-zyl-263454378-18958634.jpg" alt="Sélection de chocolats artisanaux">
-                <h3>Chocolats artisanaux</h3>
-                <p>Découvrez notre sélection de chocolats faits à la main,<br>
-                alliant tradition et créativité pour des saveurs uniques.</p>
-            </article>
-            <article class="service_card">
-                <img src="images/atelier-degustation-pexels-jonathanborba-34357862.jpg" alt="Atelier de dégustation de chocolat">
-                <h3>Ateliers de dégustation</h3>
-                <p>Participez à nos ateliers et découvrez de nouvelles saveurs dans une ambiance conviviale.</p>
-            </article>
-        </div>
-
-                 <h2>Produits</h2>
-        <section class="products-grid" aria-label="Nos produits">
-            <article class="product-card">
-                <h3>Praliné croustillant</h3>
-                <p>Une ganache fondante au praliné,<br>agrémentée d'éclats de noisettes croustillants. <br>Un véritable délice pour les amateurs de chocolat et de fruits secs.</p>
-                <img src="images/praline-croustillant-pexels-seurafrancis99-37439237.jpg" alt="Praliné croustillant aux éclats de noisettes">
-            </article>
-            <article class="product-card">
-                <h3>Truffe au champagne</h3>
-                <p>Une ganache onctueuse et légèrement pétillante, enrobée de chocolat noir. Une saveur subtile et délicate, idéale pour les fêtes et les célébrations.</p>
-                <img src="images/truffe-champagne-pexels-planka-31325599.jpg" alt="Truffes au chocolat">
-            </article>
-            <article class="product-card">
-                <h3>Coffret de chocolats assortis</h3>
-                <p>Un assortiment de chocolats fins, sélectionnés avec soin par nos chocolatiers. Un cadeau gourmand et raffiné, qui fera plaisir à coup sûr.</p>
-                <img src="images/coffret-chocolats-assortis-pexels-anthony-rahayel-125801377-38444667.jpg" alt="Coffret de chocolats assortis">
-            </article>
-            <article class="product-card">
-                <h3>Chocolat chaud</h3>
-                <p>Un chocolat chaud onctueux et réconfortant, à déguster en toute occasion.</p>
-                <img src="images/chocolat-chaud-pexels-leeloothefirst-5264675.jpg" alt="Tasse de chocolat chaud">
-            </article>
-            <article class="product-card">
-                <h3>Mendiants</h3>
-                <p>Des chocolats aux fruits secs et fruits confits, pour une explosion de saveurs en bouche.</p>
-                <img src="images/mendiants-pexels-pinklime-foody-169881302-11074275.jpg" alt="Mendiants au chocolat aux fruits secs">
-            </article>
+        <section id="accueil">
+            <h1>Palais du Chocolat</h1>
+            <p class="chocolat">Le chocolat qui éveille vos papilles</p>
+            <div>
+                <button class="action">Devis gratuit</button>
+                <button>Voir le catalogue</button>
+            </div>
         </section>
+
+        <section id="promesses">
+            <h2 id="promesses-title">Promesse</h2>
+            <h3 class="section-subtitle">Liste des bénéfices clients</h3>
+            <div class="promises">
+                <p>Des chocolats artisanaux de qualité supérieure, réalisés à partir d'ingrédients sélectionnés avec soin</p>
+                <p>Des saveurs uniques et originales, pour des sensations gustatives incomparables</p>
+                <p>Une attention particulière portée à la présentation des chocolats, pour des cadeaux gourmands inoubliables</p>
+                <p>Un service personnalisé et attentionné, pour répondre à toutes vos demandes et envies</p>
+            </div>
+            <img class="img1" src="images/promesses-julia-zyablova-EwaJbJvS9io-unsplash.jpg" alt="Présentation de chocolats artisanaux">
+        </section>
+
+        <section id="services">
+            <h2 id="services-title">Services proposés</h2>
+            <div class="services">
+                <article class="service_card">
+                    <img src="images/chocolats-artisanaux-pexels-linken-van-zyl-263454378-18958634.jpg" alt="Sélection de chocolats artisanaux">
+                    <h3>Chocolats artisanaux</h3>
+                    <p>Découvrez notre sélection de chocolats faits à la main,<br>
+                    alliant tradition et créativité pour des saveurs uniques.</p>
+                </article>
+                <article class="service_card">
+                    <img src="images/atelier-degustation-pexels-jonathanborba-34357862.jpg" alt="Atelier de dégustation de chocolat">
+                    <h3>Ateliers de dégustation</h3>
+                    <p>Participez à nos ateliers et découvrez de nouvelles saveurs dans une ambiance conviviale.</p>
+                </article>
+                <article class="service_card">
+                    <img src="images/cadeaux-personnalises-pexels-soufianlafnesh-36914973.jpg" alt="Coffret cadeau personnalisé de chocolats">
+                    <h3>Cadeaux personnalisés</h3>
+                    <p>Composez un coffret gourmand sur mesure pour offrir une attention unique à vos proches.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="produits" >
+            <h2 id="produits-title">Produits</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <h3>Praliné croustillant</h3>
+                    <p>Une ganache fondante au praliné,<br>agrémentée d'éclats de noisettes croustillants. <br>Un véritable délice pour les amateurs de chocolat et de fruits secs.</p>
+                    <img src="images/praline-croustillant-pexels-seurafrancis99-37439237.jpg" alt="Praliné croustillant aux éclats de noisettes">
+                </article>
+                <article class="product-card">
+                    <h3>Truffe au champagne</h3>
+                    <p>Une ganache onctueuse et légèrement pétillante, enrobée de chocolat noir. Une saveur subtile et délicate, idéale pour les fêtes et les célébrations.</p>
+                    <img src="images/truffe-champagne-pexels-planka-31325599.jpg" alt="Truffes au chocolat">
+                </article>
+                <article class="product-card">
+                    <h3>Coffret de chocolats assortis</h3>
+                    <p>Un assortiment de chocolats fins, sélectionnés avec soin par nos chocolatiers. Un cadeau gourmand et raffiné, qui fera plaisir à coup sûr.</p>
+                    <img src="images/coffret-chocolats-assortis-pexels-anthony-rahayel-125801377-38444667.jpg" alt="Coffret de chocolats assortis">
+                </article>
+                <article class="product-card">
+                    <h3>Chocolat chaud</h3>
+                    <p>Un chocolat chaud onctueux et réconfortant, à déguster en toute occasion.</p>
+                    <img src="images/chocolat-chaud-pexels-leeloothefirst-5264675.jpg" alt="Tasse de chocolat chaud">
+                </article>
+                <article class="product-card">
+                    <h3>Mendiants</h3>
+                    <p>Des chocolats aux fruits secs et fruits confits, pour une explosion de saveurs en bouche.</p>
+                    <img src="images/mendiants-pexels-pinklime-foody-169881302-11074275.jpg" alt="Mendiants au chocolat aux fruits secs">
+                </article>
+            </div>
+        </section>
+                        <h2>Réalisations</h2>
+        <section class="mousse">
+          
+            <img src="images/gateau-mousse-aux-trois-chocolat.webp" alt="">
+            <div>
+                <h3>Gateau mousse aux trois chocolat</h3>
+                <p>un grand classique de la pâtisserie française. C'est un dessert à la fois aérien, fondant et très gourmand, idéal pour les grandes occasions.</p>
+            </div>
+        </section>
+
+        <section class="dessert">
+            <img src="images/Recettes-de-desserts-au-chocolat.jpg" alt="">
+            <div>
+                <h3>Desserts au chocolat</h3>
+                <p>la pépite forte en cacao qui permet de réaliser une série de desserts ultra-gourmands. Noir, blanc ou au lait, le chocolat satisfait tous les goûts et se conjugue à l’infini dans un dessert au chocolat original. Notre sélection de recettes ultra-léchées.</p>
+            </div>
+        </section>
+
+        <section class="marie">
+            <img src="images/Recette-gateau-chocolat-mascarpone-facile-Lilie-Bakery.webp" alt="">
+            <div>
+                <h3>Chocolat mascarpone</h3>
+                <p>une alliance gourmande qui marie l'intensité du cacao à la douceur onctueuse du fromage italien</p>
+            </div>
+        </section>
+        <section class="moelleux">
+            <img src="images/Moelleux-fondant-au-chocolat.jpg" alt="">
+            <div>
+                <h3>Gâteau moelleux fondant au chocolat</h3>
+                <p>est une recette facile qui fait sa différence sur la cuisson, le beurre salé et une touche de basilic. Cette recette est contribuée par Lucas Delmas.</p>
+            </div>
+        </section>
+
+   <h2>Témoignages</h2>
+   
+    <div class="temoignages">
+        <article>
+            <p>Coffret cadeau personnalisé</p>
+            <p>Le coffret de chocolats que j'ai offert était magnifique et délicieux. Les saveurs étaient variées et originales, et la présentation était très soignée. Un grand merci au Palais du Chocolat pour ce cadeau parfait.</p>
+            <h5> Sophie</h5>
+        </article>
+
+     <article>
+             <p>Mariage</p>
+             <p>Les chocolats du Palais du Chocolat ont été un véritable succès lors de notre mariage. Tout le monde a adoré les saveurs raffinées et les présentations élégantes. Un grand bravo à toute l'équipe.</p>
+            <h5>Antoine</h5>
+      </article>
+
+    <article>
+        <p>Achat en boutique</p>
+        <p>J'ai acheté une tablette de chocolat noir au Palais du Chocolat et je n'ai pas été déçu. Le chocolat était intense et puissant, avec des notes subtiles de fruits secs. Un vrai régal pour les papilles.</p>
+        <h5>Nicolas</h5>
+    </article>
+    </div>
+
+<footer id="contact">
+    <h4>Prêts à travailler ensemble ?</h4>
+    <p>Une idée, un projet, une envie de collaboration ?
+Contactez-nous, nous serons ravis d’en discuter et de voir 
+comment avancer ensemble. 
+Laissez votre contact téléphonique et je vous rappellerai.</p>
+
+</footer>
     </main>
 </body>
 </html>
